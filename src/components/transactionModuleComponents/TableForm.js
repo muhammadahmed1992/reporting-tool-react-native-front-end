@@ -103,7 +103,7 @@ const TableForm = ({
         </Text>
 
         {isNotStock && (
-          isNotPos ? (
+          (isNotPos || (!isNotPos && parseInt(item.nstkopen) === 1)) ? (
             <TextInput
               style={[styles.cell, styles.cellNumber, styles.input]}
               keyboardType="numeric"

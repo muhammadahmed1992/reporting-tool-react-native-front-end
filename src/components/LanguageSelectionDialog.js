@@ -10,6 +10,7 @@ const LanguageToggle = () => {
   const [toggleValue, setToggleValue] = useState(language === 'id'); // Initialize state from Redux
 
   useEffect(() => {
+    console.log(`current lang: ${language}`);
     // Update toggle based on the current language
     setToggleValue(language === 'id');
   }, [language]);
@@ -30,8 +31,8 @@ const LanguageToggle = () => {
       <Toggle
         value={toggleValue}
         onPress={newState => handleToggle(newState)}
-        leftComponent={<Text style={styles.text}>Id</Text>}
-        rightComponent={<Text style={styles.text}>En</Text>}
+        leftComponent={<Text style={styles.text}>En</Text>}
+        rightComponent={<Text style={styles.text}>Id</Text>}
         trackBar={styles.trackBar}
         thumbButton={styles.thumbButton}
       />

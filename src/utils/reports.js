@@ -11,7 +11,8 @@ const ReportTypes = {
     PURCHASE_REPORT_NO_DISC: 'purchasing_report_no_disc',
     PURCHASE_ANALYST_REPORT: 'purchasing_analyst_report',
     PURCHASE_ANALYST_REPORT_NO_DISC: 'purchasing_analyst_report_no_disc',
-    Stock_Balance_Report_Purchase_Price: 'stock_balance_report_purchase_price'
+    Stock_Balance_Report_Purchase_Price: 'stock_balance_report_purchase_price',
+    Stock_Balance_Report_Sales_Price: 'stock_balance_report_sales_price'
 };
 
 export default ReportTypes;

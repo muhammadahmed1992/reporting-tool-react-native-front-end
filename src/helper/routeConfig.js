@@ -15,6 +15,7 @@ import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIc
 import { Endpoints } from '../utils';
 import VideoLinks from '../screens/VideoLinks';
 import PriceSearchScreenPP from '../screens/PriceSearchScreenPP';
+import PriceSearchScreenSP from '../screens/PriceSearchScreenSP';
 import PrinterSelectionScreen from '../screens/PrinterSelectionScreen';
 
 const otherConfig = {
@@ -48,8 +49,21 @@ const administrationConfig = {
       label: 'scan_barcode',
     },
   },
-  scan_barCode_purchase_price: {
+  scan_barCode_sales_price: {
     id: 4,
+    label: 'scan_barcode_sales_price',
+    name: 'search_sales_price',
+    component: PriceSearchScreenSP,
+    condition: true,
+    icon: (color, size) => (
+      <FontAwesome name="dollar" color={color} size={20} />
+    ),
+    props: {
+      label: 'scan_barcode_sales_price',
+    },
+  },
+    scan_barCode_purchase_price: {
+    id: 5,
     label: 'scan_barcode_purchase_price',
     name: 'search_purchase_price',
     component: PriceSearchScreenPP,
@@ -88,7 +102,7 @@ const administrationConfig = {
     },
   },
   connect_printer: {
-    id: 5,
+    id: 6,
     label: 'printer',
     name: 'printer',
     unmountOnBlur: true,

@@ -9,6 +9,10 @@ const filterConfig = {
       header: ['stock_id_header', 'stock_name_header'],
       columnsToBeFiltered: ['cSTKdesc', 'cstdcode'],
     },
+    stock_balance_report_sales_price: {
+      header: ['stock_id_header', 'stock_name_header'],
+      columnsToBeFiltered: ['cSTKdesc', 'cstdcode'],
+    },    
     price_report: {
       header: ['stock_id_header', 'stock_name_header'],
       columnsToBeFiltered: ['cSTKdesc', 'cstdcode'],
